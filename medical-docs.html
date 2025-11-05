@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="titles.medical">رفع الوثائق الطبية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-landmark"></i>
+        <span data-i18n="brand">بوابة خدمة المواطن</span>
+      </a>
+      <nav class="nav-links" id="primary-nav">
+        <a href="index.html" data-i18n="nav.home">الرئيسية</a>
+        <a href="services.html" data-i18n="nav.services">الخدمات</a>
+        <a href="southern-morocco.html" data-i18n="nav.south">الجنوب المغربي</a>
+        <a href="contact.html" data-i18n="nav.contact">الاتصال</a>
+        <a href="about.html" data-i18n="nav.about">حول</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-toggle" aria-label="Menu" aria-controls="primary-nav" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <label for="lang" class="sr-only" data-i18n="language.select_label">اختر اللغة</label>
+        <select id="lang" class="lang-switcher" aria-label="Language selector">
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
+          <option value="fr">Français</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <div class="container narrow">
+        <h2 data-i18n="doctors.title">الأطباء المتاحون</h2>
+        <p class="muted" data-i18n="doctors.desc">استشر أطباء معتمدين للزيارة أو الاستشارة عن بُعد.</p>
+        <div class="card-grid">
+          <div class="card">
+            <i class="fa-solid fa-user-doctor card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="doctors.d1.name">د. أمينة الفاسي</h3>
+            <p class="muted" data-i18n="doctors.d1.spec">طب عام</p>
+            <p><i class="fa-solid fa-hospital"></i> <span data-i18n="doctors.d1.clinic">عيادة السمارة</span></p>
+            <p><i class="fa-regular fa-clock"></i> <span data-i18n="doctors.d1.avail">اليوم 14:00–18:00</span></p>
+            <a class="btn" href="contact.html" data-i18n="doctors.cta.book">اتصال / حجز</a>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-baby card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="doctors.d2.name">د. يوسف العمراني</h3>
+            <p class="muted" data-i18n="doctors.d2.spec">طب الأطفال</p>
+            <p><i class="fa-solid fa-hospital"></i> <span data-i18n="doctors.d2.clinic">صحة أطفال السمارة</span></p>
+            <p><i class="fa-regular fa-clock"></i> <span data-i18n="doctors.d2.avail">غدًا صباحًا</span></p>
+            <a class="btn" href="contact.html" data-i18n="doctors.cta.book">اتصال / حجز</a>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-person-dress card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="doctors.d3.name">د. سارة بنعلي</h3>
+            <p class="muted" data-i18n="doctors.d3.spec">أمراض النساء</p>
+            <p><i class="fa-solid fa-hospital"></i> <span data-i18n="doctors.d3.clinic">مركز نساء السمارة</span></p>
+            <p><i class="fa-regular fa-clock"></i> <span data-i18n="doctors.d3.avail">هذا الأسبوع</span></p>
+            <a class="btn" href="contact.html" data-i18n="doctors.cta.book">اتصال / حجز</a>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-tooth card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="doctors.d4.name">د. خالد الإدريسي</h3>
+            <p class="muted" data-i18n="doctors.d4.spec">طب الأسنان</p>
+            <p><i class="fa-solid fa-hospital"></i> <span data-i18n="doctors.d4.clinic">أسنان السمارة</span></p>
+            <p><i class="fa-regular fa-clock"></i> <span data-i18n="doctors.d4.avail">بحسب الموعد</span></p>
+            <a class="btn" href="contact.html" data-i18n="doctors.cta.book">اتصال / حجز</a>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-heart-pulse card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="doctors.d5.name">د. نادية رحماني</h3>
+            <p class="muted" data-i18n="doctors.d5.spec">أمراض القلب</p>
+            <p><i class="fa-solid fa-hospital"></i> <span data-i18n="doctors.d5.clinic">عيادة قلب السمارة</span></p>
+            <p><i class="fa-regular fa-clock"></i> <span data-i18n="doctors.d5.avail">غدًا بعد الظهر</span></p>
+            <a class="btn" href="contact.html" data-i18n="doctors.cta.book">اتصال / حجز</a>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-bone card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="doctors.d6.name">د. رشيد الواردي</h3>
+            <p class="muted" data-i18n="doctors.d6.spec">جراحة العظام</p>
+            <p><i class="fa-solid fa-hospital"></i> <span data-i18n="doctors.d6.clinic">مركز عظام السمارة</span></p>
+            <p><i class="fa-regular fa-clock"></i> <span data-i18n="doctors.d6.avail">الأسبوع المقبل</span></p>
+            <a class="btn" href="contact.html" data-i18n="doctors.cta.book">اتصال / حجز</a>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-sun card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="doctors.d7.name">د. هشام العلوي</h3>
+            <p class="muted" data-i18n="doctors.d7.spec">الجلدية</p>
+            <p><i class="fa-solid fa-hospital"></i> <span data-i18n="doctors.d7.clinic">عيادة الجلدية بالسمارة</span></p>
+            <p><i class="fa-regular fa-clock"></i> <span data-i18n="doctors.d7.avail">الجمعة بعد الظهر</span></p>
+            <a class="btn" href="contact.html" data-i18n="doctors.cta.book">اتصال / حجز</a>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-eye card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="doctors.d8.name">د. منى شاكر</h3>
+            <p class="muted" data-i18n="doctors.d8.spec">طب العيون</p>
+            <p><i class="fa-solid fa-hospital"></i> <span data-i18n="doctors.d8.clinic">مركز العيون بالسمارة</span></p>
+            <p><i class="fa-regular fa-clock"></i> <span data-i18n="doctors.d8.avail">الاثنين القادم</span></p>
+            <a class="btn" href="contact.html" data-i18n="doctors.cta.book">اتصال / حجز</a>
+          </div>
+        </div>
+        <hr class="divider" />
+        <h1 data-i18n="medical.title">رفع الوثائق الطبية</h1>
+        <p class="muted" data-i18n="medical.desc">قم برفع ملفاتك الطبية (PDF أو صور). سنُرسل تأكيدًا بالبريد الإلكتروني بعد المعالجة.</p>
+
+        <form id="medical-form" class="form-card" novalidate>
+          <div class="form-field">
+            <label for="fullName" data-i18n="medical.form.name">الاسم الكامل</label>
+            <input id="fullName" name="fullName" type="text" required data-i18n-placeholder="medical.form.name_ph" placeholder="الاسم الكامل" />
+          </div>
+          <div class="form-field">
+            <label for="email" data-i18n="medical.form.email">البريد الإلكتروني</label>
+            <input id="email" name="email" type="email" required data-i18n-placeholder="medical.form.email_ph" placeholder="name@example.com" />
+          </div>
+          <div class="form-field">
+            <label for="files" data-i18n="medical.form.files">الملفات الطبية</label>
+            <input id="files" name="files" type="file" accept="application/pdf,image/*" multiple required />
+            <small class="muted" data-i18n="medical.form.hint">الحد الأقصى 10 ملفات، 10MB لكل ملف. الصيغ المدعومة: PDF وJPG وPNG.</small>
+          </div>
+          <div id="file-list" class="form-field" aria-live="polite"></div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit" data-i18n="medical.form.submit">إرسال</button>
+          </div>
+          <p id="medical-success" class="form-success" role="status" hidden data-i18n="medical.form.success">تم الاستلام. سنرسل إليك تأكيدًا بعد مراجعة الوثائق.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> <span data-i18n="brand">بوابة خدمة المواطن</span></p>
+      <nav class="footer-links">
+        <a href="privacy.html" data-i18n="footer.privacy">سياسة الخصوصية</a>
+        <a href="terms.html" data-i18n="footer.terms">شروط الخدمة</a>
+        <a href="accessibility.html" data-i18n="footer.accessibility">إمكانية الوصول</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="./assets/js/i18n.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

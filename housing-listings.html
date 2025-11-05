@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="titles.housing">Housing Listings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-landmark"></i>
+        <span data-i18n="brand">Citizen Service Portal</span>
+      </a>
+      <nav class="nav-links" id="primary-nav">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a class="active" href="housing-listings.html" data-i18n="titles.housing">Housing Listings</a>
+        <a href="southern-morocco.html" data-i18n="nav.south">Southern Morocco</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-toggle" aria-label="Menu" aria-controls="primary-nav" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <label for="lang" class="sr-only" data-i18n="language.select_label">Select language</label>
+        <select id="lang" class="lang-switcher" aria-label="Language selector">
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
+          <option value="fr">Français</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <h1 data-i18n="housing.title">Available Rentals</h1>
+        <p class="muted" data-i18n="housing.desc">Explore affordable and verified rental options.</p>
+
+        <div class="card-grid">
+          <div class="card">
+            <i class="fa-solid fa-building card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="housing.l1.title">2 BR Apartment – City Center</h3>
+            <p class="muted" data-i18n="housing.l1.details">2 beds • 1 bath • 75 m²</p>
+            <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="housing.l1.location">Laâyoune</span></p>
+            <p><strong data-i18n="housing.l1.price">$420/mo</strong></p>
+            <a class="btn" href="contact.html" data-i18n="housing.cta.contact">Contact</a>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-building card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="housing.l2.title">Studio – Near University</h3>
+            <p class="muted" data-i18n="housing.l2.details">1 bed • 1 bath • 35 m²</p>
+            <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="housing.l2.location">Dakhla</span></p>
+            <p><strong data-i18n="housing.l2.price">$280/mo</strong></p>
+            <a class="btn" href="contact.html" data-i18n="housing.cta.contact">Contact</a>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-house card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="housing.l3.title">Family House – Suburbs</h3>
+            <p class="muted" data-i18n="housing.l3.details">3 beds • 2 baths • 120 m²</p>
+            <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="housing.l3.location">Guelmim</span></p>
+            <p><strong data-i18n="housing.l3.price">$650/mo</strong></p>
+            <a class="btn" href="contact.html" data-i18n="housing.cta.contact">Contact</a>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-building card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="housing.l4.title">1 BR Apartment – Downtown</h3>
+            <p class="muted" data-i18n="housing.l4.details">1 bed • 1 bath • 55 m²</p>
+            <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="housing.l4.location">Tan-Tan</span></p>
+            <p><strong data-i18n="housing.l4.price">$350/mo</strong></p>
+            <a class="btn" href="contact.html" data-i18n="housing.cta.contact">Contact</a>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-person-shelter card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="housing.l5.title">Shared Room – Central</h3>
+            <p class="muted" data-i18n="housing.l5.details">Room • Shared bath • 18 m²</p>
+            <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="housing.l5.location">Smara</span></p>
+            <p><strong data-i18n="housing.l5.price">$150/mo</strong></p>
+            <a class="btn" href="contact.html" data-i18n="housing.cta.contact">Contact</a>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-water card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="housing.l6.title">Studio – Seaside</h3>
+            <p class="muted" data-i18n="housing.l6.details">1 bed • 1 bath • 32 m²</p>
+            <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="housing.l6.location">Tarfaya</span></p>
+            <p><strong data-i18n="housing.l6.price">$300/mo</strong></p>
+            <a class="btn" href="contact.html" data-i18n="housing.cta.contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> <span data-i18n="brand">Citizen Service Portal</span></p>
+      <nav class="footer-links">
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+        <a href="accessibility.html" data-i18n="footer.accessibility">Accessibility</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="./assets/js/i18n.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

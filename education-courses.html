@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="titles.courses">الدورات التعليمية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-landmark"></i>
+        <span data-i18n="brand">بوابة خدمة المواطن</span>
+      </a>
+      <nav class="nav-links" id="primary-nav">
+        <a href="index.html" data-i18n="nav.home">الرئيسية</a>
+        <a href="services.html" class="active" data-i18n="nav.services">الخدمات</a>
+        <a href="southern-morocco.html" data-i18n="nav.south">الجنوب المغربي</a>
+        <a href="contact.html" data-i18n="nav.contact">الاتصال</a>
+        <a href="about.html" data-i18n="nav.about">حول</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-toggle" aria-label="Menu" aria-controls="primary-nav" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <label for="lang" class="sr-only" data-i18n="language.select_label">اختر اللغة</label>
+        <select id="lang" class="lang-switcher" aria-label="Language selector">
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
+          <option value="fr">Français</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title" data-i18n="edu.title">دورات تعليمية مختارة</h1>
+        <p class="muted" data-i18n="edu.desc">دورات قصيرة عبر الإنترنت لدعم التعلم والعمل الحر وريادة الأعمال.</p>
+        <div class="card-grid">
+          <div class="card">
+            <h3><i class="fa-solid fa-code"></i> <span data-i18n="edu.c1.title">أساسيات البرمجة</span></h3>
+            <p class="muted" data-i18n="edu.c1.desc">مفاهيم المتغيرات، الشروط، الحلقات، والدوال.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-globe"></i> <span data-i18n="edu.c2.title">تطوير الويب للمبتدئين</span></h3>
+            <p class="muted" data-i18n="edu.c2.desc">HTML وCSS وJavaScript لبناء مواقع بسيطة وحديثة.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa-brands fa-python"></i> <span data-i18n="edu.c3.title">بايثون لعلوم البيانات</span></h3>
+            <p class="muted" data-i18n="edu.c3.desc">التحليل الأولي للبيانات باستخدام بايثون وPandas.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-mobile-screen"></i> <span data-i18n="edu.c4.title">مقدمة لتطوير تطبيقات الجوال</span></h3>
+            <p class="muted" data-i18n="edu.c4.desc">مفاهيم الواجهات وواجهات برمجة التطبيقات للتطبيقات.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-lightbulb"></i> <span data-i18n="edu.c5.title">ريادة الأعمال 101</span></h3>
+            <p class="muted" data-i18n="edu.c5.desc">صياغة الفكرة، دراسة السوق، ومقترح القيمة.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-coins"></i> <span data-i18n="edu.c6.title">تمويل الشركات الناشئة</span></h3>
+            <p class="muted" data-i18n="edu.c6.desc">أساسيات التمويل، التكاليف، التسعير، ونقطة التعادل.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-cart-shopping"></i> <span data-i18n="edu.c7.title">أساسيات التجارة الإلكترونية</span></h3>
+            <p class="muted" data-i18n="edu.c7.desc">اختيار المنصة، إدارة المنتجات، والدفع والشحن.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-bullhorn"></i> <span data-i18n="edu.c8.title">التسويق الرقمي</span></h3>
+            <p class="muted" data-i18n="edu.c8.desc">مقدمة في تحسين الظهور، الشبكات الاجتماعية، والبريد الإلكتروني.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> <span data-i18n="brand">بوابة خدمة المواطن</span></p>
+      <nav class="footer-links">
+        <a href="privacy.html" data-i18n="footer.privacy">سياسة الخصوصية</a>
+        <a href="terms.html" data-i18n="footer.terms">شروط الخدمة</a>
+        <a href="accessibility.html" data-i18n="footer.accessibility">إمكانية الوصول</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="./assets/js/i18n.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

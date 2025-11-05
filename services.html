@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="titles.services">Public Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-landmark"></i>
+        <span data-i18n="brand">Citizen Service Portal</span>
+      </a>
+      <nav class="nav-links" id="primary-nav">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a class="active" href="services.html" data-i18n="nav.services">Services</a>
+        <a href="southern-morocco.html" data-i18n="nav.south">Southern Morocco</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-toggle" aria-label="Menu" aria-controls="primary-nav" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <label for="lang" class="sr-only" data-i18n="language.select_label">Select language</label>
+        <select id="lang" class="lang-switcher" aria-label="Language selector">
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
+          <option value="fr">Français</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <h1 data-i18n="services.title">Public Services</h1>
+        <p class="muted" data-i18n="services.desc">Browse categories to learn more and access forms and documents.</p>
+        <div class="card-grid">
+          <a class="card" id="health" href="medical-docs.html">
+            <i class="fa-solid fa-notes-medical card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="services.categories.health">Health</h3>
+            <p data-i18n="services.cards.health">Find hospitals, clinics, immunization and insurance information.</p>
+          </a>
+          <a class="card" id="education" href="education-courses.html">
+            <i class="fa-solid fa-graduation-cap card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="services.categories.education">Education</h3>
+            <p data-i18n="services.cards.education">Admissions, scholarships, training, and certifications.</p>
+          </a>
+          <a class="card" id="housing" href="housing-listings.html">
+            <i class="fa-solid fa-house-chimney card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="services.categories.housing">Housing</h3>
+            <p data-i18n="services.cards.housing">Affordable housing, permits, and tenant support.</p>
+          </a>
+          <a class="card" id="employment" href="employment-jobs.html">
+            <i class="fa-solid fa-briefcase card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="services.categories.employment">Employment</h3>
+            <p data-i18n="services.cards.employment">Job search, licensing, workforce and benefits.</p>
+          </a>
+          <a class="card" id="feedback" href="complaints.html">
+            <i class="fa-solid fa-comments card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="services.categories.feedback">Complaints / Suggestions</h3>
+            <p data-i18n="services.cards.feedback">Intuitive form with categories, file upload, and real‑time status.</p>
+          </a>
+          <a class="card" id="documents" href="#documents">
+            <i class="fa-solid fa-file-lines card-icon" aria-hidden="true"></i>
+            <h3 data-i18n="services.categories.documents">Documents & Forms</h3>
+            <p data-i18n="services.cards.documents">Download official documents and application forms.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> <span data-i18n="brand">Citizen Service Portal</span></p>
+      <nav class="footer-links">
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+        <a href="accessibility.html" data-i18n="footer.accessibility">Accessibility</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="./assets/js/i18n.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
